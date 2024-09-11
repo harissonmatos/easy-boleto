@@ -131,3 +131,4 @@ lib-cov
 *.pid
 package-lock.json
 
+boleto.pdf

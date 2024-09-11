@@ -16,7 +16,7 @@ const boleto = {
   instrucoes: ['Após o vencimento Mora dia R$ 1,59', 'Após o vencimento, multa de 2%'],
   beneficiario: {
     nome: 'Empresa Fictícia LTDA',
-    cnpj:'43576788000191',
+    cnpj: '43576788000191',
     dadosBancarios: {
       carteira: '09',
       agencia: '18455',
@@ -39,9 +39,9 @@ const boleto = {
     especieDocumento: 'DM',
     valor: 110.00,
     datas: {
-      vencimento: '02-04-2020',
-      processamento: '02-04-2019',
-      documentos: '02-04-2019'
+      vencimento: '02-04-2025',
+      processamento: '02-04-2025',
+      documentos: '02-04-2025'
     }
   }
 };
@@ -55,6 +55,3 @@ novoBoleto.pdfFile().then(async ({ stream }) => {
 }).catch((error) => {
   return error;
 });
-
-
-
