@@ -124,5 +124,28 @@
     "carteiraFormatadoPad": 2,
     "codigoFormatadoPad": 7,
     "nossoNumeroFormatadoPad": 12
+  },
+  "Sicoob": {
+    "nome": "",
+    "numero": "756",
+    "numeroFormatado": "756",
+    "digito": "0",
+    "titulos": {
+      "localDoPagamento": "Local de Pagamento",
+      "especieDoDocumento": "Espécie",
+      "instrucoes": "Instruções (texto de responsabilidade do beneficiário)",
+      "agenciaECodigoDoBeneficiario": "Coop. contratante/Cód. Beneficiário",
+      "valorDoDocumento": "Valor Documento",
+      "igualDoValorDoDocumento": "",
+      "nomeDoPagador": "Nome do Pagador"
+    },
+    "exibirReciboDoPagadorCompleto": false,
+    "exibirCampoCip": false,
+    "imagem": "logotipos/sicoob.png",
+    "imprimirNome": true,
+    "carteiraPad": 1,
+    "carteiraFormatadoPad": 1,
+    "codigoFormatadoPad": 7,
+    "nossoNumeroFormatadoPad": 7
   }
 }
