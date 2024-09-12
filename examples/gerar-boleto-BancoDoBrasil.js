@@ -1,7 +1,7 @@
-const { Bancos, Boletos, streamToPromise } = require('../lib/index');
+const { BankConfigs, Boletos, streamToPromise } = require('../lib/index');
 
 const boleto = {
-  banco: new Bancos.BancoBrasil(),
+  banco: new BankConfigs('Banco do Brasil'),
   pagador: {
     nome: 'José Bonifácio de Andrada',
     registroNacional: '12345678',
@@ -39,9 +39,9 @@ const boleto = {
     especieDocumento: 'DM',
     valor: 110.00,
     datas: {
-      vencimento: '02-04-2025',
-      processamento: '02-04-2025',
-      documentos: '02-04-2025'
+      vencimento: '02-04-2020',
+      processamento: '02-04-2019',
+      documentos: '02-04-2019'
     }
   }
 };

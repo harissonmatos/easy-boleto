@@ -1,0 +1,47 @@
+{
+  "Banco do Brasil": {
+    "nome": "Banco do Brasil S.A.",
+    "numero": "001",
+    "numeroFormatado": "001",
+    "digito": "9",
+    "titulos": {
+      "instrucoes": "Informações de responsabilidade do beneficiário",
+      "nomeDoPagador": "Nome do Pagador",
+      "especie": "Moeda",
+      "quantidade": "Quantidade",
+      "valor": "Valor",
+      "moraMulta": "(+) Juros / Multa"
+    },
+    "exibirReciboDoPagadorCompleto": true,
+    "exibirCampoCip": false,
+    "imagem": "logotipos/banco-do-brasil.png",
+    "imprimirNome": false,
+    "carteiraPad": 2,
+    "carteiraFormatadoPad": 2,
+    "codigoFormatadoPad": 7,
+    "nossoNumeroFormatadoPad": 17
+  },
+  "Bradesco": {
+    "nome": "Banco Bradesco S.A.",
+    "numero": "237",
+    "numeroFormatado": "237",
+    "digito": "2",
+    "titulos": {
+      "instrucoes": "Informações de responsabilidade do beneficiário",
+      "nomeDoPagador": "Nome do Pagador",
+      "especie": "Moeda",
+      "quantidade": "Quantidade",
+      "valor": "Valor",
+      "moraMulta": "(+) Juros / Multa"
+    },
+    "exibirReciboDoPagadorCompleto": true,
+    "exibirCampoCip": true,
+    "imagem": "logotipos/bradesco.png",
+    "nossoNumeroFormatadoLength": 11,
+    "imprimirNome": false,
+    "carteiraPad": 2,
+    "carteiraFormatadoPad": 2,
+    "codigoFormatadoPad": 7,
+    "nossoNumeroFormatadoPad": 11
+  }
+}
