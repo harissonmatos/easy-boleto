@@ -37,11 +37,29 @@
     "exibirReciboDoPagadorCompleto": true,
     "exibirCampoCip": true,
     "imagem": "logotipos/bradesco.png",
-    "nossoNumeroFormatadoLength": 11,
     "imprimirNome": false,
     "carteiraPad": 2,
     "carteiraFormatadoPad": 2,
     "codigoFormatadoPad": 7,
     "nossoNumeroFormatadoPad": 11
+  },
+  "Caixa": {
+    "nome": "Caixa Econômica Federal S/A",
+    "numero": "104",
+    "numeroFormatado": "104",
+    "digito": "0",
+    "titulos": {
+      "instrucoes": "Instruções (texto de responsabilidade do beneficiário)",
+      "nomeDoPagador": "Nome do Pagador",
+      "especie": "Espécie Moeda",
+      "quantidade": "Quantidade Moeda",
+      "valor": "xValor"
+    },
+    "exibirReciboDoPagadorCompleto": true,
+    "exibirCampoCip": false,
+    "imagem": "logotipos/caixa-economica-federal.png",
+    "imprimirNome": false,
+    "carteiraFormatadoPad": 2,
+    "codigoFormatadoPad": 5
   }
 }
