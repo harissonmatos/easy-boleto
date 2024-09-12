@@ -102,5 +102,27 @@
     "carteiraFormatadoPad": 3,
     "codigoFormatadoPad": 5,
     "nossoNumeroFormatadoPad": 8
+  },
+  "Santander": {
+    "nome": "Banco Santander S.A.",
+    "numero": "033",
+    "numeroFormatado": "033",
+    "digito": "7",
+    "titulos": {
+      "instrucoes": "Informações de responsabilidade do beneficiário",
+      "nomeDoPagador": "Nome do Pagador",
+      "especie": "Moeda",
+      "quantidade": "Quantidade",
+      "valor": "Valor",
+      "moraMulta": "(+) Juros / Multa"
+    },
+    "exibirReciboDoPagadorCompleto": true,
+    "exibirCampoCip": false,
+    "imagem": "logotipos/santander.png",
+    "imprimirNome": false,
+    "carteiraPad": 2,
+    "carteiraFormatadoPad": 2,
+    "codigoFormatadoPad": 7,
+    "nossoNumeroFormatadoPad": 12
   }
 }
