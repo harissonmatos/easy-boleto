@@ -1,8 +1,8 @@
 # EasyBoleto
 
-Biblioteca em Node.js para geração de boletos utilizando PDFKit
+Biblioteca em Node.js para geração de boletos utilizando PDFKit.
 
-Geração de boletos para bancos:
+## Geração de boletos para bancos:
 
 - Bradesco
 - Caixa
@@ -13,30 +13,40 @@ Geração de boletos para bancos:
 - Santander
 - Banco do Brasil
 
-### Install
+## Instalação
 
-```javascript
-npm i EasyBoleto
+```bash
+npm i easy-boleto
 ```
 
-### Exemplos de uso
+## Exemplos de uso
 
-```javascript
+### Gerar Boleto Brasil
+
+```bash
 npm run gerarBrasil
 ```
 
-```javascript
+![Exemplo Boleto Brasil](./examples/boleto-banco-do-brasil.png)
+
+### Gerar Boleto Bradesco
+
+```bash
 npm run gerarBradesco
 ```
 
-```javascript
+![Exemplo Boleto Bradesco](./examples/boleto-bradesco.png)
+
+### Gerar Boleto Cecred
+
+```bash
 npm run gerarCecred
 ```
 
-- [pasta com arquivos de exemplo](/examples)
+![Exemplo Boleto Cecred](./examples/boleto-cecred.png)
 
-### Run tests
+- [Pasta com arquivos de exemplo](/examples)
 
-```javascript
-npm run test
-```
+## Licença
+
+Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](./LICENSE) para mais detalhes.
