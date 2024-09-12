@@ -147,5 +147,27 @@
     "carteiraFormatadoPad": 1,
     "codigoFormatadoPad": 7,
     "nossoNumeroFormatadoPad": 7
+  },
+  "Sicredi": {
+    "nome": "Sicredi",
+    "numero": "748",
+    "numeroFormatado": "748",
+    "digito": "X",
+    "titulos": {
+      "instrucoes": "Informações de responsabilidade do beneficiário",
+      "nomeDoPagador": "Nome do Pagador",
+      "especie": "Moeda",
+      "quantidade": "Quantidade",
+      "valor": "Valor",
+      "moraMulta": "(+) Juros / Multa"
+    },
+    "exibirReciboDoPagadorCompleto": true,
+    "exibirCampoCip": false,
+    "imagem": "logotipos/sicredi.png",
+    "imprimirNome": false,
+    "carteiraPad": 2,
+    "carteiraFormatadoPad": 1,
+    "codigoFormatadoPad": 7,
+    "nossoNumeroFormatadoPad": 8
   }
 }
