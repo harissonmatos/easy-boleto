@@ -61,5 +61,31 @@
     "imprimirNome": false,
     "carteiraFormatadoPad": 2,
     "codigoFormatadoPad": 5
+  },
+  "Cecred": {
+    "nome": "Ailos",
+    "numero": "085",
+    "numeroFormatado": "085",
+    "digito": "1",
+    "titulos": {
+      "instrucoes": "Instruções (texto de responsabilidade do beneficiário)",
+      "nomeDoPagador": "Pagador",
+      "especie": "Moeda",
+      "quantidade": "Quantidade",
+      "valor": "x Valor",
+      "moraMulta": "(+) Moras / Multa"
+    },
+    "exibirReciboDoPagadorCompleto": true,
+    "exibirCampoCip": true,
+    "imagem": "logotipos/ailos.png",
+    "imprimirNome": false,
+    "carteiraPad": 2,
+    "carteiraFormatadoPad": 2,
+    "codigoFormatadoPad": 7,
+    "nossoNumeroFormatadoPad": 11,
+    "locaisDePagamentoPadrao": [
+      "PAGAVEL PREFERENCIALMENTE NAS COOPERATIVAS DO SISTEMA AILOS.",
+      "APOS VENCIMENTO PAGAR SOMENTE NA COOPERATIVA "
+    ]
   }
 }

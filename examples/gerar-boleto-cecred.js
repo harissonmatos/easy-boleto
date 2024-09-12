@@ -1,7 +1,8 @@
-const { Bancos, Boletos, streamToPromise } = require('../lib/index');
+const { BankConfigs, Boletos, streamToPromise } = require('../lib/index');
+
 
 const boleto = {
-  banco: new Bancos.Cecred(),
+  banco: new BankConfigs("Cecred"),
   pagador: {
     nome: 'José Bonifácio de Andrada',
     RegistroNacional: '12345678',
