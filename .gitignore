@@ -132,3 +132,5 @@ lib-cov
 package-lock.json
 
 boleto.pdf
+
+pixQrCode.png

@@ -1,11 +1,12 @@
-const { BankConfigs, Boletos, streamToPromise } = require('../lib/index');
+const { BankConfigs, Boletos, StreamToPromise } = require('../lib/index');
+const QRCode = require('qrcode');
 
 const boleto = {
     banco: new BankConfigs('Banco do Brasil'), // Mesmo boleto, só mudar logo
-    // banco: new BankConfigs('Itau'), // Mesmo boleto, só mudar logo
+    banco: new BankConfigs('Itau'), // Mesmo boleto, só mudar logo
     pagador: {
         nome: 'José Bonifácio de Andrada',
-        registroNacional: '11563458712', // cpf e cnpj (mostrar após o nome)
+        registroNacional: '11563458712',
         endereco: {
             logradouro: 'Rua Pedro Lessa, 15',
             bairro: 'Centro',
@@ -44,7 +45,6 @@ const boleto = {
         valor: 125448.54,
         linhaDigitavel: '00190000090222196700900000007179998810000000100',
         codigoBarras: '00199988100000001000000002221967000000000717',
-        // É qrCode normal - opcional
         pixQrCode: '00020101021226900014br.gov.bcb.pix2568qrcodepix.bb.com.br/pix/v2/cobv/d02d51b4-c363-44b4-84a7-726b1cd3cd3552040000530398654041.005802BR5925SORVEDOCES INDUSTRIA E CO6010VILA VELHA62070503***6304B3A4',
         datas: {
             vencimento: '22-04-2025',
@@ -54,13 +54,33 @@ const boleto = {
     }
 };
 
-const novoBoleto = new Boletos(boleto);
-novoBoleto.gerarBoleto();
+async function gerarPix(pixQrCode) {
+    return new Promise((resolve, reject) => {
+        QRCode.toFile('lib/boleto/imagens/tmp/pixQrCode.png', pixQrCode, {
+            color: {
+                dark: '#000000',
+                light: '#FFFFFF'
+            }
+        }, function (err) {
+            if (err) return reject(err);
+            resolve();
+        });
+    });
+}
 
-novoBoleto.pdfFile().then(async ({ stream }) => {
-    // ctx.res.set('Content-type', 'application/pdf');	
-    await streamToPromise(stream);
-}).catch((error) => {
-    return error;
-});
+async function main() {
+    try {
+        if (boleto.boleto.pixQrCode) { await gerarPix(boleto.boleto.pixQrCode); }
 
+        const novoBoleto = new Boletos(boleto);
+        novoBoleto.gerarBoleto();
+
+        const { stream } = await novoBoleto.pdfFile();
+        // ctx.res.set('Content-type', 'application/pdf');	
+        await StreamToPromise(stream);
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+main();
