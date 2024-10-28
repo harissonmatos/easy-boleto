@@ -21,6 +21,21 @@
     "codigoFormatadoPad": 7,
     "nossoNumeroFormatadoPad": 17
   },
+  "Itau": {
+    "nome": "Banco Itaú S/A",
+    "numero": "341",
+    "numeroFormatado": "341",
+    "digito": "7",
+    "titulos": {},
+    "exibirReciboDoPagadorCompleto": false,
+    "exibirCampoCip": false,
+    "imagem": "logotipos/itau.png",
+    "imprimirNome": true,
+    "carteiraPad": 3,
+    "carteiraFormatadoPad": 3,
+    "codigoFormatadoPad": 5,
+    "nossoNumeroFormatadoPad": 8
+  },
   "Bradesco": {
     "nome": "Banco Bradesco S.A.",
     "numero": "237",
@@ -87,21 +102,6 @@
       "PAGAVEL PREFERENCIALMENTE NAS COOPERATIVAS DO SISTEMA AILOS.",
       "APOS VENCIMENTO PAGAR SOMENTE NA COOPERATIVA "
     ]
-  },
-  "Itau": {
-    "nome": "Banco Itaú S/A",
-    "numero": "341",
-    "numeroFormatado": "341",
-    "digito": "7",
-    "titulos": {},
-    "exibirReciboDoPagadorCompleto": false,
-    "exibirCampoCip": false,
-    "imagem": "logotipos/itau.png",
-    "imprimirNome": true,
-    "carteiraPad": 3,
-    "carteiraFormatadoPad": 3,
-    "codigoFormatadoPad": 5,
-    "nossoNumeroFormatadoPad": 8
   },
   "Santander": {
     "nome": "Banco Santander S.A.",
