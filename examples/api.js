@@ -47,9 +47,9 @@ const boleto = {
         codigoBarras: '00199988100000001000000002221967000000000717',
         pixQrCode: '00020101021226900014br.gov.bcb.pix2568qrcodepix.bb.com.br/pix/v2/cobv/d02d51b4-c363-44b4-84a7-726b1cd3cd3552040000530398654041.005802BR5925SORVEDOCES INDUSTRIA E CO6010VILA VELHA62070503***6304B3A4',
         datas: {
-            vencimento: '22-04-2025',
-            processamento: '25-10-2024',
-            documentos: '25-10-2024'
+            vencimento: '2025-04-22',
+            processamento: '2024-10-25',
+            documentos: '2024-10-25'
         }
     }
 };
