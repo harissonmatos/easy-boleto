@@ -6,7 +6,7 @@ const boleto = {
     // banco: new BankConfigs('Itau'), // Mesmo boleto, só mudar logo
     pagador: {
         nome: 'José Bonifácio de Andrada',
-        registroNacional: '11563458712',
+        registroNacional: '20031219000246',
         endereco: {
             logradouro: 'Rua Pedro Lessa, 15',
             bairro: 'Centro',
