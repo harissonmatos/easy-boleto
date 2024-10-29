@@ -3,7 +3,7 @@ const QRCode = require('qrcode');
 
 const boleto = {
     banco: new BankConfigs('Banco do Brasil'), // Mesmo boleto, só mudar logo
-    banco: new BankConfigs('Itau'), // Mesmo boleto, só mudar logo
+    // banco: new BankConfigs('Itau'), // Mesmo boleto, só mudar logo
     pagador: {
         nome: 'José Bonifácio de Andrada',
         registroNacional: '11563458712',
@@ -54,33 +54,13 @@ const boleto = {
     }
 };
 
-async function gerarPix(pixQrCode) {
-    return new Promise((resolve, reject) => {
-        QRCode.toFile('lib/boleto/imagens/tmp/pixQrCode.png', pixQrCode, {
-            color: {
-                dark: '#000000',
-                light: '#FFFFFF'
-            }
-        }, function (err) {
-            if (err) return reject(err);
-            resolve();
-        });
-    });
-}
 
-async function main() {
-    try {
-        if (boleto.boleto.pixQrCode) { await gerarPix(boleto.boleto.pixQrCode); }
+const novoBoleto = new Boletos(boleto);
+novoBoleto.gerarBoleto();
 
-        const novoBoleto = new Boletos(boleto);
-        novoBoleto.gerarBoleto();
-
-        const { stream } = await novoBoleto.pdfFile();
-        // ctx.res.set('Content-type', 'application/pdf');	
-        await StreamToPromise(stream);
-    } catch (error) {
-        console.error(error);
-    }
-}
-
-main();
+novoBoleto.pdfFile().then(async ({ stream }) => {
+    // ctx.res.set('Content-type', 'application/pdf');	
+    await streamToPromise(stream);
+}).catch((error) => {
+    return error;
+});
